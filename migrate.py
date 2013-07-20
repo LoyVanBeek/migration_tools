@@ -47,9 +47,9 @@ def migrate_repo(packagepath, destination_path, authors="/home/loy/ros/fuerte/tu
     git.svn.clone(svn_url, destination_path, no_metadata=True, A=authors)
     
     cd(destination_path)
-    git.remote.add("origin", repo.clone_url)
-    git.pull("origin", "master")
+    git.remote.add("origin", repo.ssh_url)
     git.push("origin", "master")
+    git.pull("origin", "master")
 
 
 def scan_for_rospackages(path):
@@ -99,7 +99,8 @@ if __name__ == "__main__":
         _, name, _ = get_package_info(packagepath)
         
         destination = os.path.join(os.path.expanduser(destinationRoot), name)
-        print "Migrating {0} to {1} ...".format(packagepath, destination)
-        import ipdb; ipdb.set_trace()
+        if !os.listdir(destination): #When the directory is empty
+            print "Migrating {0} to {1} ...".format(packagepath, destination)
+            import ipdb; ipdb.set_trace()
 
-        migrate_repo(packagepath, destination)
+            migrate_repo(packagepath, destination)
