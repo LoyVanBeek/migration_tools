@@ -17,7 +17,7 @@ gh = Github(token=TOKEN)
 
 def create_repo(name, description, language='python'):
     print "Creating {2} repo {0}: {1}".format(name, description, language)
-    import ipdb; ipdb.set_trace()
+    #import ipdb; ipdb.set_trace()
     repo = gh.repos.create(dict(name=name, 
                                 description=description, 
                                 gitignore_template=language, 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         _, name, _ = get_package_info(packagepath)
         
         destination = os.path.join(os.path.expanduser(destinationRoot), name)
-        if !os.listdir(destination): #When the directory is empty
+        if not os.path.exists(destination): #Only do conversion is path does not yet exist
             print "Migrating {0} to {1} ...".format(packagepath, destination)
             import ipdb; ipdb.set_trace()
 
