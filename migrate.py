@@ -6,17 +6,27 @@ import sys
 from pygithub3 import Github
 from sh import git, cd, svn, grep
 
+import xml.etree.ElementTree as ET
+
 TOKEN = sys.argv[1]
+
+sourceRoot = "~/ros/fuerte/tue/trunk"
+destinationRoot = "~/ros/fuerte/tue/git"
 
 gh = Github(token=TOKEN)
 
-
 def create_repo(name, description, language='python'):
-    repo = gh.repos.create(dict(name=name, description=description, gitignore_template=language, auto_init='true'), in_org='tue-robotics-lab')
+    print "Creating {2} repo {0}: {1}".format(name, description, language)
+    import ipdb; ipdb.set_trace()
+    repo = gh.repos.create(dict(name=name, 
+                                description=description, 
+                                gitignore_template=language, 
+                                auto_init='true'), 
+                            in_org='tue-robotics-lab')
     return repo
 
 
-def migrate_repo(svn_url, destination_path, authors="~/authors.txt"):
+def migrate_repo(packagepath, destination_path, authors="/home/loy/ros/fuerte/tue/authors.txt"):
     """#The process to migrate a project is:
     # Create a new repository.
     $ git svn clone <svn_url> --no-metadata <destination_path>
@@ -25,8 +35,10 @@ def migrate_repo(svn_url, destination_path, authors="~/authors.txt"):
     $ git pull origin master
     $ git push origin master"""
 
-    name = svn_url.split("/")[-1] #Last part of the url
-    repo = create_repo(name, name) #Check the manifest.xml to check for rospy or roscpp and specify language accordingly
+    svn_url = svnurl_for_path(packagepath)
+    language, name, description = get_package_info(packagepath)
+
+    repo = create_repo(name, description, language=language)
     
     #TODO: Has some issues still:
     #  STDERR:
@@ -41,6 +53,7 @@ def migrate_repo(svn_url, destination_path, authors="~/authors.txt"):
 
 
 def scan_for_rospackages(path):
+    path = os.path.expanduser(path)
     for root, dirs, files in os.walk(path):
         if "manifest.xml" in files:
             yield root
@@ -50,3 +63,43 @@ def svnurl_for_path(path):
     url = grep(svn.info(), "URL: ")
     url = url.replace("URL: ", "").replace("\n", "")
     return url
+
+def get_package_info(packagepath):
+    """Check the manifest.xml to 
+        * check the used language (by checking for rospy or roscpp)
+        * Get the name of the package
+        * Get the description"""
+    manifestfile = packagepath+"/manifest.xml"
+    
+    tree = ET.parse(manifestfile)
+
+    language, name, description = "", "", ""
+
+    #Find dependencies for language
+    depends = tree.findall("depend")
+    dependencies = [dep.attrib["package"] for dep in depends]
+
+    roslang2lang = {"rospy":"python", "roscpp":"c++", "roslisp":"lisp", "rosjava_jni":"java"}
+
+    for roslang, lang in roslang2lang.iteritems():
+        if roslang in dependencies:
+            language = lang
+
+    #Get language
+    name = packagepath.split("/")[-1]
+
+    #Get description
+    desc = tree.findall("description")[0]
+    description = desc.text.replace('\n', '').strip()
+
+    return language, name, description
+
+if __name__ == "__main__":
+    for packagepath in scan_for_rospackages(sourceRoot):
+        _, name, _ = get_package_info(packagepath)
+        
+        destination = os.path.join(os.path.expanduser(destinationRoot), name)
+        print "Migrating {0} to {1} ...".format(packagepath, destination)
+        import ipdb; ipdb.set_trace()
+
+        migrate_repo(packagepath, destination)
