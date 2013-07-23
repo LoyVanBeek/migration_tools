@@ -4,7 +4,7 @@ import os
 import sys
 
 import github
-#github.enable_console_debug_logging()
+# github.enable_console_debug_logging()
 
 from sh import git, cd, svn, grep
 
@@ -15,16 +15,16 @@ def create_repo(name, description, language='python'):
     print "Creating {2} repo {0}: {1}".format(name, description, language)
     # import ipdb; ipdb.set_trace()
     repo = tue.create_repo(name=name,
-                            description=description,
-                            gitignore_template=language,
-                            auto_init=True)
+                           description=description,
+                           gitignore_template=language,
+                           auto_init=True)
     return repo
 
 
-def migrate_repo(packagepath, destination_path, authors="~/ros/fuerte/tue/authors.txt"):
+def migrate_repo(packagepath, destination_path, use_https, authors="~/ros/fuerte/tue/authors.txt"):
     """#The process to migrate a project is:
     # Create a new repository.
-    $ git svn clone <svn_url> --no-metadata <destination_path>
+    $ git svn clone <svn_url> <destination_path>
     $ cd ~/ros/fuerte/tue/git/challenge_cleanup
     $ git remote add origin <repo https url>
     $ git pull origin master
@@ -37,21 +37,17 @@ def migrate_repo(packagepath, destination_path, authors="~/ros/fuerte/tue/author
 
     try:
         repo = create_repo(name, description, language=language)
-    except github.GithubException, e:
+    except github.GithubException as e:
         if e.status == 422:
-            cont = raw_input("The repo has an invalid field, it could already exist. Please verify and press 'c' to continue without first creating the repo: ")
+            cont = raw_input(
+                "The repo has an invalid field, it could already exist. Please verify and press 'c' to continue without first creating the repo: ")
             if 'c' in cont:
                 repo = tue.get_repo(name)
             else:
                 sys.stderr.write("Could not migrate {0}".format(name))
                 return
 
-
-    # TODO: Has some issues still:
-    #  STDERR:
-    #    Using existing [svn-remote "svn"]
-    #    svn-remote.svn.fetch already set to track :refs/remotes/git-svn
-    git.svn.clone(svn_url, destination_path, no_metadata=True, A=authors)
+    git.svn.clone(svn_url, destination_path, A=authors)
 
     cd(destination_path)
 
@@ -118,7 +114,7 @@ def migrate_for_path(packagepath, use_https):
         print "Migrating {0} to {1} ...".format(packagepath, destination)
         import ipdb
         ipdb.set_trace()
-        migrate_repo(packagepath, destination, use_https) 
+        migrate_repo(packagepath, destination, use_https)
 
 
 if __name__ == "__main__":
@@ -152,5 +148,6 @@ if __name__ == "__main__":
         for packagepath in scan_for_rospackages(sourceRoot):
             migrate_for_path(packagepath, use_https)
     else:
-        packages = {get_package_info(packagepath)[1]:packagepath for packagepath in scan_for_rospackages(sourceRoot)} #map names to paths
+        packages = dict([(get_package_info(packagepath)[1], packagepath)
+                         for packagepath in scan_for_rospackages(sourceRoot)])  # map names to paths
         migrate_for_path(packages[specific_package], use_https)
