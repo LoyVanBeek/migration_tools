@@ -31,11 +31,17 @@ def clone_all_tue_packages(use_https):
         else:
             git_url = repo.ssh_url
 
+        print "{0}: ".format(repo.name),
         try:
-            git.clone(git_url)
+            print "Cloning from {0}...".format(git_url),
+            git.clone(git_url, )
         except sh.ErrorReturnCode_128 as e:  # When the dir to clone already exists and is not empty, git pull this dir
+            print e
             cd(repo.name)
+            print "Clone failed, pulling instead",
             git.pull("origin", "master")
+            cd(destinationRoot)
+        print " Done"
 
 if __name__ == "__main__":
     TOKEN = sys.argv[1]
