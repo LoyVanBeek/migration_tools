@@ -2,6 +2,7 @@ Migration Tools
 ===============
 
 Requires $ sudo pip install pygithub3 sh PyGithub #Still deciding which is easiest to use
+and $ sudo apt-get install git-core git-svn
 
 Converts ROS packages in the TU/e SVN-trunk directory to GitHub repositories for the tue-robotics-lab organization.
 

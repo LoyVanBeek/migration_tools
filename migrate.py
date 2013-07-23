@@ -3,27 +3,21 @@
 import os
 import sys
 
-from pygithub3 import Github
+import github
+#github.enable_console_debug_logging()
+
 from sh import git, cd, svn, grep
 
 import xml.etree.ElementTree as ET
-
-TOKEN = sys.argv[1]
-
-sourceRoot = "~/ros/fuerte/tue/trunk"
-destinationRoot = "~/ros/fuerte/tue/git"
-
-gh = Github(token=TOKEN)
 
 
 def create_repo(name, description, language='python'):
     print "Creating {2} repo {0}: {1}".format(name, description, language)
     # import ipdb; ipdb.set_trace()
-    repo = gh.repos.create(dict(name=name,
-                                description=description,
-                                gitignore_template=language,
-                                auto_init='true'),
-                           in_org='tue-robotics-lab')
+    repo = tue.create_repo(name=name,
+                            description=description,
+                            gitignore_template=language,
+                            auto_init=True)
     return repo
 
 
@@ -41,7 +35,17 @@ def migrate_repo(packagepath, destination_path, authors="~/ros/fuerte/tue/author
     svn_url = svnurl_for_path(packagepath)
     language, name, description = get_package_info(packagepath)
 
-    repo = create_repo(name, description, language=language)
+    try:
+        repo = create_repo(name, description, language=language)
+    except github.GithubException, e:
+        if e.status == 422:
+            cont = raw_input("The repo has an invalid field, it could already exist. Please verify and press 'c' to continue without first creating the repo: ")
+            if 'c' in cont:
+                repo = tue.get_repo(name)
+            else:
+                sys.stderr.write("Could not migrate {0}".format(name))
+                return
+
 
     # TODO: Has some issues still:
     #  STDERR:
@@ -50,7 +54,13 @@ def migrate_repo(packagepath, destination_path, authors="~/ros/fuerte/tue/author
     git.svn.clone(svn_url, destination_path, no_metadata=True, A=authors)
 
     cd(destination_path)
-    git.remote.add("origin", repo.ssh_url)
+
+    if use_https:
+        git_url = repo.clone_url
+    else:
+        git_url = repo.ssh_url
+
+    git.remote.add("origin", git_url)
     git.push("origin", "master")
     git.pull("origin", "master")
 
@@ -100,14 +110,47 @@ def get_package_info(packagepath):
 
     return language, name, description
 
+
+def migrate_for_path(packagepath, use_https):
+    _, name, _ = get_package_info(packagepath)
+    destination = os.path.join(destinationRoot, name)
+    if not os.path.exists(destination):  # Only do conversion is path does not yet exist
+        print "Migrating {0} to {1} ...".format(packagepath, destination)
+        import ipdb
+        ipdb.set_trace()
+        migrate_repo(packagepath, destination, use_https) 
+
+
 if __name__ == "__main__":
-    for packagepath in scan_for_rospackages(sourceRoot):
-        _, name, _ = get_package_info(packagepath)
+    TOKEN = sys.argv[1]
 
-        destination = os.path.join(os.path.expanduser(destinationRoot), name)
-        if not os.path.exists(destination):  # Only do conversion is path does not yet exist
-            print "Migrating {0} to {1} ...".format(packagepath, destination)
-            import ipdb
-            ipdb.set_trace()
+    specific_package = None
+    try:
+        specific_package = sys.argv[2]
+    except IndexError:
+        print "Specify a ROS package name, or --all"
 
-            migrate_repo(packagepath, destination)
+    try:
+        method = sys.argv[3]
+        if method == "--ssh":
+            use_https = False
+        elif method == "--https":
+            use_https = True
+    except IndexError:
+        use_https = True
+
+    sourceRoot = "~/ros/fuerte/tue/trunk"
+    destinationRoot = "~/ros/fuerte/tue/git"
+
+    destinationRoot = os.path.expanduser(destinationRoot)
+
+    gh = github.Github(login_or_token=TOKEN)
+
+    tue = gh.get_organization("tue-robotics-lab")
+
+    if specific_package == "--all":
+        for packagepath in scan_for_rospackages(sourceRoot):
+            migrate_for_path(packagepath, use_https)
+    else:
+        packages = {get_package_info(packagepath)[1]:packagepath for packagepath in scan_for_rospackages(sourceRoot)} #map names to paths
+        migrate_for_path(packages[specific_package], use_https)
