@@ -4,6 +4,8 @@ import os
 import sys
 
 from github import Github
+
+import sh
 from sh import git, cd, svn, grep
 
 import xml.etree.ElementTree as ET
@@ -28,7 +30,7 @@ def clone_all_tue_packages():
 	for repo in tue_repos:
 		try:
 			git.clone(repo.clone_url)
-		except Exception as e:
+		except sh.ErrorReturnCode_128 as e: #When the dir to clone already exists and is not empty, git pull this dir
 			cd(repo.name)
 			git.pull()
 
