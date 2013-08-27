@@ -1,0 +1,1265 @@
+amigo@CST70:<fuerte>~/ros/fuerte/tue/git$ source migration_tools/rebase_all.sh
+./amigo_actions
+From https://github.com/tue-robotics-lab/amigo_actions
+From https://github.com/tue-robotics-lab/amigo_actions
+To https://github.com/tue-robotics-lab/amigo_actions.git
+   d27df3b..71c4b86  master -> master
+---------
+./amigo_admin_files
+U	files/amigo_bash_aliases
+U	files/amigo_bash_ros
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./amigo_amplifier_enabler
+From https://github.com/tue-robotics-lab/amigo_amplifier_enabler
+From https://github.com/tue-robotics-lab/amigo_amplifier_enabler
+To https://github.com/tue-robotics-lab/amigo_amplifier_enabler.git
+   d0a9dc5..830e3b9  master -> master
+---------
+./amigo_arm_navigation
+From https://github.com/tue-robotics-lab/amigo_arm_navigation
+From https://github.com/tue-robotics-lab/amigo_arm_navigation
+^[[CTo https://github.com/tue-robotics-lab/amigo_arm_navigation.git
+   30eabd8..8da7fa3  master -> master
+---------
+./amigo_arm_navigation_config
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_config
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_config
+To https://github.com/tue-robotics-lab/amigo_arm_navigation_config.git
+   51cb7cc..8b1c54c  master -> master
+---------
+./amigo_arm_navigation_launch
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_launch
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_launch
+To https://github.com/tue-robotics-lab/amigo_arm_navigation_launch.git
+   a83f2c0..6b297e6  master -> master
+---------
+./amigo_arm_navigation_perception
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_perception
+From https://github.com/tue-robotics-lab/amigo_arm_navigation_perception
+To https://github.com/tue-robotics-lab/amigo_arm_navigation_perception.git
+   64d05f3..8c9e2bf  master -> master
+---------
+./amigo_arm_server
+From https://github.com/tue-robotics-lab/amigo_arm_server
+From https://github.com/tue-robotics-lab/amigo_arm_server
+To https://github.com/tue-robotics-lab/amigo_arm_server.git
+   957fa10..4dff289  master -> master
+---------
+./amigo_base_controller
+From https://github.com/tue-robotics-lab/amigo_base_controller
+From https://github.com/tue-robotics-lab/amigo_base_controller
+To https://github.com/tue-robotics-lab/amigo_base_controller.git
+   4e78005..0ef3a8f  master -> master
+---------
+./amigo_battery_manager
+From https://github.com/tue-robotics-lab/amigo_battery_manager
+From https://github.com/tue-robotics-lab/amigo_battery_manager
+To https://github.com/tue-robotics-lab/amigo_battery_manager.git
+   9a9bdbc..b17041f  master -> master
+---------
+./amigo_checkerboard_detector
+From https://github.com/tue-robotics-lab/amigo_checkerboard_detector
+From https://github.com/tue-robotics-lab/amigo_checkerboard_detector
+To https://github.com/tue-robotics-lab/amigo_checkerboard_detector.git
+   4904efb..42393b4  master -> master
+---------
+./amigo_console2
+From https://github.com/tue-robotics-lab/amigo_console2
+From https://github.com/tue-robotics-lab/amigo_console2
+To https://github.com/tue-robotics-lab/amigo_console2.git
+   67c7631..fc5a29e  master -> master
+---------
+./amigo_controller_enabler
+From https://github.com/tue-robotics-lab/amigo_controller_enabler
+From https://github.com/tue-robotics-lab/amigo_controller_enabler
+To https://github.com/tue-robotics-lab/amigo_controller_enabler.git
+   7695208..625c831  master -> master
+---------
+./amigo_dashboard
+From https://github.com/tue-robotics-lab/amigo_dashboard
+From https://github.com/tue-robotics-lab/amigo_dashboard
+To https://github.com/tue-robotics-lab/amigo_dashboard.git
+   7351613..7a939a5  master -> master
+---------
+./amigo_demo
+U	launch/demo_exec_dependencies.launch
+U	manifest.xml
+U	src/demo_executioner.py
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./amigo_demo_panel
+From https://github.com/tue-robotics-lab/amigo_demo_panel
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+First, rewinding head to replay your work on top of it...
+Applying: This isn't used and breaks the build
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Niet builden
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Removed weird comment in mainpage.dox
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Renaming topics to /text_to_speech/input
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Renaming topics to /text_to_speech/input
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Initial commit
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+From https://github.com/tue-robotics-lab/amigo_demo_panel
+To https://github.com/tue-robotics-lab/amigo_demo_panel.git
+   5763013..f52548c  master -> master
+---------
+./amigo_diagnostics
+From https://github.com/tue-robotics-lab/amigo_diagnostics
+From https://github.com/tue-robotics-lab/amigo_diagnostics
+To https://github.com/tue-robotics-lab/amigo_diagnostics.git
+   abb94b9..8459a7c  master -> master
+---------
+./amigo_emergency_speakup
+From https://github.com/tue-robotics-lab/amigo_emergency_speakup
+From https://github.com/tue-robotics-lab/amigo_emergency_speakup
+To https://github.com/tue-robotics-lab/amigo_emergency_speakup.git
+   f5c67bb..5b29f4b  master -> master
+---------
+./amigo_etherCAT
+From https://github.com/tue-robotics-lab/amigo_etherCAT
+From https://github.com/tue-robotics-lab/amigo_etherCAT
+To https://github.com/tue-robotics-lab/amigo_etherCAT.git
+   148a2ad..7c7bfcc  master -> master
+---------
+./amigo_fun
+From https://github.com/tue-robotics-lab/amigo_fun
+From https://github.com/tue-robotics-lab/amigo_fun
+To https://github.com/tue-robotics-lab/amigo_fun.git
+   89e2a12..a43305b  master -> master
+---------
+./amigo_gripper_detection
+From https://github.com/tue-robotics-lab/amigo_gripper_detection
+From https://github.com/tue-robotics-lab/amigo_gripper_detection
+To https://github.com/tue-robotics-lab/amigo_gripper_detection.git
+   3cfbe54..c585dcb  master -> master
+---------
+./amigo_gripper_server
+From https://github.com/tue-robotics-lab/amigo_gripper_server
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./amigo_hardware_simulator
+From https://github.com/tue-robotics-lab/amigo_hardware_simulator
+From https://github.com/tue-robotics-lab/amigo_hardware_simulator
+To https://github.com/tue-robotics-lab/amigo_hardware_simulator.git
+   8d19350..184f93a  master -> master
+---------
+./amigo_head_controller
+From https://github.com/tue-robotics-lab/amigo_head_controller
+From https://github.com/tue-robotics-lab/amigo_head_controller
+To https://github.com/tue-robotics-lab/amigo_head_controller.git
+   cfbad6e..420f91d  master -> master
+---------
+./amigo_head_ref
+From https://github.com/tue-robotics-lab/amigo_head_ref
+From https://github.com/tue-robotics-lab/amigo_head_ref
+To https://github.com/tue-robotics-lab/amigo_head_ref.git
+   870aefa..fd15ed7  master -> master
+---------
+./amigo_head_server
+From https://github.com/tue-robotics-lab/amigo_head_server
+From https://github.com/tue-robotics-lab/amigo_head_server
+To https://github.com/tue-robotics-lab/amigo_head_server.git
+   f25795d..88fb121  master -> master
+---------
+./amigo_inverse_reachability
+From https://github.com/tue-robotics-lab/amigo_inverse_reachability
+From https://github.com/tue-robotics-lab/amigo_inverse_reachability
+To https://github.com/tue-robotics-lab/amigo_inverse_reachability.git
+   aa6be01..1a7107f  master -> master
+---------
+./amigo_joint_interface_converter
+From https://github.com/tue-robotics-lab/amigo_joint_interface_converter
+From https://github.com/tue-robotics-lab/amigo_joint_interface_converter
+To https://github.com/tue-robotics-lab/amigo_joint_interface_converter.git
+   6c59ebc..75880a3  master -> master
+---------
+./amigo_kinematics
+From https://github.com/tue-robotics-lab/amigo_kinematics
+From https://github.com/tue-robotics-lab/amigo_kinematics
+To https://github.com/tue-robotics-lab/amigo_kinematics.git
+   53c1bec..6afbf8a  master -> master
+---------
+./amigo_kinematics_constraint_aware
+From https://github.com/tue-robotics-lab/amigo_kinematics_constraint_aware
+From https://github.com/tue-robotics-lab/amigo_kinematics_constraint_aware
+To https://github.com/tue-robotics-lab/amigo_kinematics_constraint_aware.git
+   feae5a2..e061933  master -> master
+---------
+./amigo_kinematics_simulator
+From https://github.com/tue-robotics-lab/amigo_kinematics_simulator
+From https://github.com/tue-robotics-lab/amigo_kinematics_simulator
+To https://github.com/tue-robotics-lab/amigo_kinematics_simulator.git
+   55a162a..670f778  master -> master
+---------
+./amigo_laser
+From https://github.com/tue-robotics-lab/amigo_laser
+From https://github.com/tue-robotics-lab/amigo_laser
+To https://github.com/tue-robotics-lab/amigo_laser.git
+   bd33149..54cf17a  master -> master
+---------
+./amigo_laser_filter
+From https://github.com/tue-robotics-lab/amigo_laser_filter
+From https://github.com/tue-robotics-lab/amigo_laser_filter
+To https://github.com/tue-robotics-lab/amigo_laser_filter.git
+   b5992bf..e18ec86  master -> master
+---------
+./amigo_launch_files
+U	launch/sensors/base_kinect.launch
+U	launch/sensors/top_kinect.launch
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./amigo_lowlevel_monitor
+From https://github.com/tue-robotics-lab/amigo_lowlevel_monitor
+From https://github.com/tue-robotics-lab/amigo_lowlevel_monitor
+To https://github.com/tue-robotics-lab/amigo_lowlevel_monitor.git
+   08e8f82..fd31530  master -> master
+---------
+./amigo_machine_files
+From https://github.com/tue-robotics-lab/amigo_machine_files
+From https://github.com/tue-robotics-lab/amigo_machine_files
+To https://github.com/tue-robotics-lab/amigo_machine_files.git
+   4f02fc8..645e13b  master -> master
+---------
+./amigo_maps
+fatal: 'origin' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+./amigo_marker_control
+From https://github.com/tue-robotics-lab/amigo_marker_control
+From https://github.com/tue-robotics-lab/amigo_marker_control
+To https://github.com/tue-robotics-lab/amigo_marker_control.git
+   f2bfe95..2d5018e  master -> master
+---------
+./amigo_marker_detection
+U	tue-manifest.xml
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./amigo_moodlight
+From https://github.com/tue-robotics-lab/amigo_moodlight
+From https://github.com/tue-robotics-lab/amigo_moodlight
+To https://github.com/tue-robotics-lab/amigo_moodlight.git
+   2d0d646..269ff54  master -> master
+---------
+./amigo_msgs
+From https://github.com/tue-robotics-lab/amigo_msgs
+From https://github.com/tue-robotics-lab/amigo_msgs
+To https://github.com/tue-robotics-lab/amigo_msgs.git
+   4c23bd0..c3a6fdb  master -> master
+---------
+./amigo_navigation_local
+From https://github.com/tue-robotics-lab/amigo_navigation_local
+From https://github.com/tue-robotics-lab/amigo_navigation_local
+To https://github.com/tue-robotics-lab/amigo_navigation_local.git
+   18a915d..12ee63d  master -> master
+---------
+./amigo_navigation_local_3d
+From https://github.com/tue-robotics-lab/amigo_navigation_local_3d
+From https://github.com/tue-robotics-lab/amigo_navigation_local_3d
+To https://github.com/tue-robotics-lab/amigo_navigation_local_3d.git
+   09bf077..6e60021  master -> master
+---------
+./amigo_pera_controller
+From https://github.com/tue-robotics-lab/amigo_pera_controller
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./amigo_pointcloud_snapshotter
+From https://github.com/tue-robotics-lab/amigo_pointcloud_snapshotter
+From https://github.com/tue-robotics-lab/amigo_pointcloud_snapshotter
+To https://github.com/tue-robotics-lab/amigo_pointcloud_snapshotter.git
+   9898ce5..3205ebd  master -> master
+---------
+./amigo_point_voxelizer
+From https://github.com/tue-robotics-lab/amigo_point_voxelizer
+From https://github.com/tue-robotics-lab/amigo_point_voxelizer
+To https://github.com/tue-robotics-lab/amigo_point_voxelizer.git
+   ee30d2c..7154c91  master -> master
+---------
+./amigo_redundancy_search
+From https://github.com/tue-robotics-lab/amigo_redundancy_search
+From https://github.com/tue-robotics-lab/amigo_redundancy_search
+To https://github.com/tue-robotics-lab/amigo_redundancy_search.git
+   330ec3d..ba8a3ea  master -> master
+---------
+./amigo_ref_interpolator
+From https://github.com/tue-robotics-lab/amigo_ref_interpolator
+From https://github.com/tue-robotics-lab/amigo_ref_interpolator
+To https://github.com/tue-robotics-lab/amigo_ref_interpolator.git
+   d242e0f..3fcea31  master -> master
+---------
+./amigo_robot_model
+fatal: 'origin' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+./amigo_self_filter
+From https://github.com/tue-robotics-lab/amigo_self_filter
+From https://github.com/tue-robotics-lab/amigo_self_filter
+To https://github.com/tue-robotics-lab/amigo_self_filter.git
+   3357689..ac77ff1  master -> master
+---------
+./amigo_simulation_controllers
+fatal: 'origin' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+./amigo_spindle_controller
+From https://github.com/tue-robotics-lab/amigo_spindle_controller
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+From https://github.com/tue-robotics-lab/amigo_spindle_controller
+To https://github.com/tue-robotics-lab/amigo_spindle_controller.git
+   af77a70..800ec97  master -> master
+---------
+./amigo_spindle_server
+From https://github.com/tue-robotics-lab/amigo_spindle_server
+From https://github.com/tue-robotics-lab/amigo_spindle_server
+To https://github.com/tue-robotics-lab/amigo_spindle_server.git
+   69cf00f..6e516bf  master -> master
+---------
+./amigo_state_publisher
+From https://github.com/tue-robotics-lab/amigo_state_publisher
+From https://github.com/tue-robotics-lab/amigo_state_publisher
+To https://github.com/tue-robotics-lab/amigo_state_publisher.git
+   4500c63..79c1e4c  master -> master
+---------
+./amigo_tabletop_object_perception
+From https://github.com/tue-robotics-lab/amigo_tabletop_object_perception
+From https://github.com/tue-robotics-lab/amigo_tabletop_object_perception
+To https://github.com/tue-robotics-lab/amigo_tabletop_object_perception.git
+   b498bb9..204d54c  master -> master
+---------
+./amigo_teleop_keyboard
+From https://github.com/tue-robotics-lab/amigo_teleop_keyboard
+From https://github.com/tue-robotics-lab/amigo_teleop_keyboard
+To https://github.com/tue-robotics-lab/amigo_teleop_keyboard.git
+   71a373f..a7a7462  master -> master
+---------
+./amigo_teleop_spacenav
+From https://github.com/tue-robotics-lab/amigo_teleop_spacenav
+From https://github.com/tue-robotics-lab/amigo_teleop_spacenav
+To https://github.com/tue-robotics-lab/amigo_teleop_spacenav.git
+   2e9524c..2176749  master -> master
+---------
+./amigo_test
+From https://github.com/tue-robotics-lab/amigo_test
+From https://github.com/tue-robotics-lab/amigo_test
+To https://github.com/tue-robotics-lab/amigo_test.git
+   7d839ce..5acb13a  master -> master
+---------
+./amigo_velocity_kinematics
+From https://github.com/tue-robotics-lab/amigo_velocity_kinematics
+From https://github.com/tue-robotics-lab/amigo_velocity_kinematics
+To https://github.com/tue-robotics-lab/amigo_velocity_kinematics.git
+   f1102b2..7dcce99  master -> master
+---------
+./amigo_webui
+From https://github.com/tue-robotics-lab/amigo_webui
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./amigo_whole_body_controller
+From https://github.com/tue-robotics-lab/amigo_whole_body_controller
+From https://github.com/tue-robotics-lab/amigo_whole_body_controller
+To https://github.com/tue-robotics-lab/amigo_whole_body_controller.git
+   5d73ecd..94610f6  master -> master
+---------
+./armadillo_matrix
+From https://github.com/tue-robotics-lab/armadillo_matrix
+From https://github.com/tue-robotics-lab/armadillo_matrix
+To https://github.com/tue-robotics-lab/armadillo_matrix.git
+   3f179d0..7a6cb22  master -> master
+---------
+./bin_detector
+From https://github.com/tue-robotics-lab/bin_detector
+From https://github.com/tue-robotics-lab/bin_detector
+To https://github.com/tue-robotics-lab/bin_detector.git
+   ddc5990..a2ca76e  master -> master
+---------
+./blob_clustering
+From https://github.com/tue-robotics-lab/blob_clustering
+From https://github.com/tue-robotics-lab/blob_clustering
+To https://github.com/tue-robotics-lab/blob_clustering.git
+   cebef3e..f1edd94  master -> master
+---------
+./body_detector
+From https://github.com/tue-robotics-lab/body_detector
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./calibrate_gripper_offset
+From https://github.com/tue-robotics-lab/calibrate_gripper_offset
+From https://github.com/tue-robotics-lab/calibrate_gripper_offset
+To https://github.com/tue-robotics-lab/calibrate_gripper_offset.git
+   60db788..310c1bc  master -> master
+---------
+./challenge_cleanup
+From https://github.com/tue-robotics-lab/challenge_cleanup
+From https://github.com/tue-robotics-lab/challenge_cleanup
+To https://github.com/tue-robotics-lab/challenge_cleanup.git
+   b4319bc..5259a72  master -> master
+---------
+./challenge_cleanup_backup
+U	manifest.xml
+U	src/clean_up.py
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./challenge_cocktail_party
+From https://github.com/tue-robotics-lab/challenge_cocktail_party
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./challenge_demo
+From https://github.com/tue-robotics-lab/challenge_demo
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./challenge_egpsr
+From https://github.com/tue-robotics-lab/challenge_egpsr
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./challenge_emergency
+U	output/map.pgm
+U	output/map.png
+U	output/status.txt
+U	parameters/parameters.yaml
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./challenge_final
+From https://github.com/tue-robotics-lab/challenge_final
+From https://github.com/tue-robotics-lab/challenge_final
+To https://github.com/tue-robotics-lab/challenge_final.git
+   9f6798f..89cd3dd  master -> master
+---------
+./challenge_follow_me
+From https://github.com/tue-robotics-lab/challenge_follow_me
+From https://github.com/tue-robotics-lab/challenge_follow_me
+To https://github.com/tue-robotics-lab/challenge_follow_me.git
+   d75974e..b91730b  master -> master
+---------
+./challenge_open
+U	src/open_challenge_wk2013.py
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./challenge_restaurant
+From https://github.com/tue-robotics-lab/challenge_restaurant
+From https://github.com/tue-robotics-lab/challenge_restaurant
+To https://github.com/tue-robotics-lab/challenge_restaurant.git
+   15930be..2aef716  master -> master
+---------
+./challenge_rips
+From https://github.com/tue-robotics-lab/challenge_rips
+From https://github.com/tue-robotics-lab/challenge_rips
+To https://github.com/tue-robotics-lab/challenge_rips.git
+   4126092..3fe7fff  master -> master
+---------
+./code_profiler
+From https://github.com/tue-robotics-lab/code_profiler
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./common_admin_files
+From https://github.com/tue-robotics-lab/common_admin_files
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+It seems that there is already a rebase-apply directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+	git rebase (--continue | --abort | --skip)
+If that is not the case, please
+	rm -fr /home/amigo/ros/fuerte/tue/git/common_admin_files/.git/rebase-apply
+and run me again.  I am stopping in case you still have something
+valuable there.
+rebase refs/remotes/git-svn: command returned error: 1
+
+./create_speech_files
+From https://github.com/tue-robotics-lab/create_speech_files
+From https://github.com/tue-robotics-lab/create_speech_files
+To https://github.com/tue-robotics-lab/create_speech_files.git
+   4c5452c..e4c9385  master -> master
+---------
+./depth_map_self_filter
+From https://github.com/tue-robotics-lab/depth_map_self_filter
+From https://github.com/tue-robotics-lab/depth_map_self_filter
+To https://github.com/tue-robotics-lab/depth_map_self_filter.git
+   05c3274..0b05e56  master -> master
+---------
+./depth_map_to_point_cloud
+From https://github.com/tue-robotics-lab/depth_map_to_point_cloud
+From https://github.com/tue-robotics-lab/depth_map_to_point_cloud
+To https://github.com/tue-robotics-lab/depth_map_to_point_cloud.git
+   08533b9..1067720  master -> master
+---------
+./dev
+fatal: Not a git repository (or any of the parent directories): .git
+./dynamixel
+From https://github.com/tue-robotics-lab/dynamixel
+From https://github.com/tue-robotics-lab/dynamixel
+To https://github.com/tue-robotics-lab/dynamixel.git
+   f74e3c7..475b34b  master -> master
+---------
+./dynamixel_ethercat
+From https://github.com/tue-robotics-lab/dynamixel_ethercat
+From https://github.com/tue-robotics-lab/dynamixel_ethercat
+To https://github.com/tue-robotics-lab/dynamixel_ethercat.git
+   19218b8..4a7feeb  master -> master
+---------
+./fast_simulator
+From https://github.com/tue-robotics-lab/fast_simulator
+From https://github.com/tue-robotics-lab/fast_simulator
+To https://github.com/tue-robotics-lab/fast_simulator.git
+   69aa92e..71362b8  master -> master
+---------
+./gazebo_perception
+From https://github.com/tue-robotics-lab/gazebo_perception
+From https://github.com/tue-robotics-lab/gazebo_perception
+To https://github.com/tue-robotics-lab/gazebo_perception.git
+   0a8d496..d6c5b5e  master -> master
+---------
+./geometry_calculator
+From https://github.com/tue-robotics-lab/geometry_calculator
+From https://github.com/tue-robotics-lab/geometry_calculator
+To https://github.com/tue-robotics-lab/geometry_calculator.git
+   4a73d13..5ac0dc0  master -> master
+---------
+./jazz_description
+From https://github.com/tue-robotics-lab/jazz_description
+From https://github.com/tue-robotics-lab/jazz_description
+To https://github.com/tue-robotics-lab/jazz_description.git
+   e472d40..e8172ed  master -> master
+---------
+./jazz_gazebo
+From https://github.com/tue-robotics-lab/jazz_gazebo
+From https://github.com/tue-robotics-lab/jazz_gazebo
+To https://github.com/tue-robotics-lab/jazz_gazebo.git
+   d95d0d0..fadc91f  master -> master
+---------
+./jazz_simulation_controllers
+From https://github.com/tue-robotics-lab/jazz_simulation_controllers
+From https://github.com/tue-robotics-lab/jazz_simulation_controllers
+To https://github.com/tue-robotics-lab/jazz_simulation_controllers.git
+   374a352..0b934d0  master -> master
+---------
+./knowrob_wire
+From https://github.com/tue-robotics-lab/knowrob_wire
+From https://github.com/tue-robotics-lab/knowrob_wire
+To https://github.com/tue-robotics-lab/knowrob_wire.git
+   bed5238..b54c8ce  master -> master
+---------
+./laser_ppl_detection
+From https://github.com/tue-robotics-lab/laser_ppl_detection
+From https://github.com/tue-robotics-lab/laser_ppl_detection
+To https://github.com/tue-robotics-lab/laser_ppl_detection.git
+   15b67c8..b6c6b36  master -> master
+---------
+./laserscan_starter
+From https://github.com/tue-robotics-lab/laserscan_starter
+From https://github.com/tue-robotics-lab/laserscan_starter
+To https://github.com/tue-robotics-lab/laserscan_starter.git
+   fc75c71..eef1131  master -> master
+---------
+./launch_checker
+U	CMakeLists.txt
+U	src/launch_checker.cpp
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./manual_object_detection
+From https://github.com/tue-robotics-lab/manual_object_detection
+From https://github.com/tue-robotics-lab/manual_object_detection
+To https://github.com/tue-robotics-lab/manual_object_detection.git
+   79d8bfe..28dcf16  master -> master
+---------
+./migration_tools
+From https://github.com/tue-robotics-lab/migration_tools
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+rebase_all.sh: needs update
+update-index --refresh: command returned error: 1
+
+./object_detector_2d
+From https://github.com/tue-robotics-lab/object_detector_2d
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+First, rewinding head to replay your work on top of it...
+Applying: 
+Applying: Rejected bad merge
+Applying: Initial commit
+Applying: 
+Applying: Rejected bad merge
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: 
+Applying: Rejected bad merge
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: 
+Applying: Rejected bad merge
+Applying: 
+Applying: Rejected bad merge
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: 
+Applying: Rejected bad merge
+Applying: 
+Applying: Rejected bad merge
+Applying: 
+Applying: Rejected bad merge
+From https://github.com/tue-robotics-lab/object_detector_2d
+To https://github.com/tue-robotics-lab/object_detector_2d.git
+   8e00fb4..89191f1  master -> master
+---------
+./object_msgs
+From https://github.com/tue-robotics-lab/object_msgs
+From https://github.com/tue-robotics-lab/object_msgs
+To https://github.com/tue-robotics-lab/object_msgs.git
+   ec27ed0..76d6c23  master -> master
+---------
+./obj_in_gripper
+From https://github.com/tue-robotics-lab/obj_in_gripper
+From https://github.com/tue-robotics-lab/obj_in_gripper
+To https://github.com/tue-robotics-lab/obj_in_gripper.git
+   62623a9..b183eae  master -> master
+---------
+./pein_ar_pose
+From https://github.com/tue-robotics-lab/pein_ar_pose
+From https://github.com/tue-robotics-lab/pein_ar_pose
+To https://github.com/tue-robotics-lab/pein_ar_pose.git
+   50f60a5..9bf5450  master -> master
+---------
+./pein_blob_clustering
+From https://github.com/tue-robotics-lab/pein_blob_clustering
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_data_io
+From https://github.com/tue-robotics-lab/pein_data_io
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_face_recognition
+From https://github.com/tue-robotics-lab/pein_face_recognition
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_face_segmentation
+From https://github.com/tue-robotics-lab/pein_face_segmentation
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_module
+From https://github.com/tue-robotics-lab/pein_module
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_msgs
+From https://github.com/tue-robotics-lab/pein_msgs
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_ppl_detection
+From https://github.com/tue-robotics-lab/pein_ppl_detection
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_srvs
+From https://github.com/tue-robotics-lab/pein_srvs
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_supervisor
+From https://github.com/tue-robotics-lab/pein_supervisor
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_tabletop_segmentation
+From https://github.com/tue-robotics-lab/pein_tabletop_segmentation
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_template_matching
+From https://github.com/tue-robotics-lab/pein_template_matching
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pein_vis
+From https://github.com/tue-robotics-lab/pein_vis
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./pera_description
+From https://github.com/tue-robotics-lab/pera_description
+From https://github.com/tue-robotics-lab/pera_description
+To https://github.com/tue-robotics-lab/pera_description.git
+   e494bdd..c16d504  master -> master
+---------
+./PERA_USB_IO
+From https://github.com/tue-robotics-lab/PERA_USB_IO
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./perception_srvs
+From https://github.com/tue-robotics-lab/perception_srvs
+From https://github.com/tue-robotics-lab/perception_srvs
+To https://github.com/tue-robotics-lab/perception_srvs.git
+   f03de1e..ee54a48  master -> master
+---------
+./pico_admin_files
+From https://github.com/tue-robotics-lab/pico_admin_files
+From https://github.com/tue-robotics-lab/pico_admin_files
+To https://github.com/tue-robotics-lab/pico_admin_files.git
+   6a0f6d5..1872925  master -> master
+---------
+./pico_antifisheye
+From https://github.com/tue-robotics-lab/pico_antifisheye
+From https://github.com/tue-robotics-lab/pico_antifisheye
+To https://github.com/tue-robotics-lab/pico_antifisheye.git
+   77d2bc0..9d9edf7  master -> master
+---------
+./pico_base_controller
+From https://github.com/tue-robotics-lab/pico_base_controller
+From https://github.com/tue-robotics-lab/pico_base_controller
+To https://github.com/tue-robotics-lab/pico_base_controller.git
+   8f6dce0..15b3526  master -> master
+---------
+./pico_battery_checker
+From https://github.com/tue-robotics-lab/pico_battery_checker
+From https://github.com/tue-robotics-lab/pico_battery_checker
+To https://github.com/tue-robotics-lab/pico_battery_checker.git
+   500ce5d..9b2750c  master -> master
+---------
+./pico_face_detection
+From https://github.com/tue-robotics-lab/pico_face_detection
+From https://github.com/tue-robotics-lab/pico_face_detection
+To https://github.com/tue-robotics-lab/pico_face_detection.git
+   cc89e50..38a8611  master -> master
+---------
+./pico_launch_files
+From https://github.com/tue-robotics-lab/pico_launch_files
+From https://github.com/tue-robotics-lab/pico_launch_files
+To https://github.com/tue-robotics-lab/pico_launch_files.git
+   1632d35..6ac5b71  master -> master
+---------
+./pico_lookatincameraframe
+From https://github.com/tue-robotics-lab/pico_lookatincameraframe
+From https://github.com/tue-robotics-lab/pico_lookatincameraframe
+To https://github.com/tue-robotics-lab/pico_lookatincameraframe.git
+   f641be0..89abb79  master -> master
+---------
+./pico_maps
+From https://github.com/tue-robotics-lab/pico_maps
+From https://github.com/tue-robotics-lab/pico_maps
+To https://github.com/tue-robotics-lab/pico_maps.git
+   79b0011..6211fc9  master -> master
+---------
+./problems.txt
+bash: cd: ./problems.txt: Not a directory
+./problib
+From https://github.com/tue-robotics-lab/problib
+From https://github.com/tue-robotics-lab/problib
+To https://github.com/tue-robotics-lab/problib.git
+   c54768d..26877c1  master -> master
+---------
+./psi
+U	CMakeLists.txt
+M	include/psi/Constant.h
+M	include/psi/ConstantImpl.h
+U	include/psi/Term.h
+U	src/Constant.cpp
+U	src/ConstantImpl.cpp
+M	src/Term.cpp
+U	src/conversions.cpp
+A	src/main.cpp
+M	test/utest.cpp
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./psi_console
+From https://github.com/tue-robotics-lab/psi_console
+From https://github.com/tue-robotics-lab/psi_console
+To https://github.com/tue-robotics-lab/psi_console.git
+   ea58ba0..36a2313  master -> master
+---------
+./psi_jpl
+From https://github.com/tue-robotics-lab/psi_jpl
+From https://github.com/tue-robotics-lab/psi_jpl
+To https://github.com/tue-robotics-lab/psi_jpl.git
+   44109ad..c48544d  master -> master
+---------
+./qt_qcustomplot
+From https://github.com/tue-robotics-lab/qt_qcustomplot
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./reasoner_viz
+From https://github.com/tue-robotics-lab/reasoner_viz
+From https://github.com/tue-robotics-lab/reasoner_viz
+To https://github.com/tue-robotics-lab/reasoner_viz.git
+   2d38683..3db844c  master -> master
+---------
+./rgb_lights
+From https://github.com/tue-robotics-lab/rgb_lights
+From https://github.com/tue-robotics-lab/rgb_lights
+To https://github.com/tue-robotics-lab/rgb_lights.git
+   26931a7..53a0043  master -> master
+---------
+./rgb_lights_manager
+From https://github.com/tue-robotics-lab/rgb_lights_manager
+From https://github.com/tue-robotics-lab/rgb_lights_manager
+To https://github.com/tue-robotics-lab/rgb_lights_manager.git
+   345a897..086fd11  master -> master
+---------
+./robot_skills
+From https://github.com/tue-robotics-lab/robot_skills
+From https://github.com/tue-robotics-lab/robot_skills
+To https://github.com/tue-robotics-lab/robot_skills.git
+   8eaf3a5..cbc20c0  master -> master
+---------
+./robot_smach_states
+U	src/robot_smach_states/perception.py
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./rosbag_video
+From https://github.com/tue-robotics-lab/rosbag_video
+From https://github.com/tue-robotics-lab/rosbag_video
+To https://github.com/tue-robotics-lab/rosbag_video.git
+   8cb4260..535e02f  master -> master
+---------
+./rqt_amigo_dashboard
+From https://github.com/tue-robotics-lab/rqt_amigo_dashboard
+From https://github.com/tue-robotics-lab/rqt_amigo_dashboard
+To https://github.com/tue-robotics-lab/rqt_amigo_dashboard.git
+   6cc6402..2031cd8  master -> master
+---------
+./rtt_amigo_msgs
+From https://github.com/tue-robotics-lab/rtt_amigo_msgs
+From https://github.com/tue-robotics-lab/rtt_amigo_msgs
+To https://github.com/tue-robotics-lab/rtt_amigo_msgs.git
+   2204f7c..9c1df8b  master -> master
+---------
+./rtt_custom_components
+From https://github.com/tue-robotics-lab/rtt_custom_components
+From https://github.com/tue-robotics-lab/rtt_custom_components
+To https://github.com/tue-robotics-lab/rtt_custom_components.git
+   a01ca81..c6855b9  master -> master
+---------
+./rtt_discontinuity_components
+From https://github.com/tue-robotics-lab/rtt_discontinuity_components
+From https://github.com/tue-robotics-lab/rtt_discontinuity_components
+To https://github.com/tue-robotics-lab/rtt_discontinuity_components.git
+   1ff4107..bf9c872  master -> master
+---------
+./rtt_filter_components
+From https://github.com/tue-robotics-lab/rtt_filter_components
+From https://github.com/tue-robotics-lab/rtt_filter_components
+To https://github.com/tue-robotics-lab/rtt_filter_components.git
+   989c4c4..f874da4  master -> master
+---------
+./rtt_logic_components
+From https://github.com/tue-robotics-lab/rtt_logic_components
+From https://github.com/tue-robotics-lab/rtt_logic_components
+To https://github.com/tue-robotics-lab/rtt_logic_components.git
+   5951580..2d21125  master -> master
+---------
+./rtt_math_components
+From https://github.com/tue-robotics-lab/rtt_math_components
+From https://github.com/tue-robotics-lab/rtt_math_components
+To https://github.com/tue-robotics-lab/rtt_math_components.git
+   b281310..3307b60  master -> master
+---------
+./rtt_matrix_components
+From https://github.com/tue-robotics-lab/rtt_matrix_components
+From https://github.com/tue-robotics-lab/rtt_matrix_components
+To https://github.com/tue-robotics-lab/rtt_matrix_components.git
+   66ef12d..9676f21  master -> master
+---------
+./rtt_ROS_interfacing
+From https://github.com/tue-robotics-lab/rtt_ROS_interfacing
+From https://github.com/tue-robotics-lab/rtt_ROS_interfacing
+To https://github.com/tue-robotics-lab/rtt_ROS_interfacing.git
+   0d1d2c3..c2a6bc2  master -> master
+---------
+./rtt_routing_components
+From https://github.com/tue-robotics-lab/rtt_routing_components
+From https://github.com/tue-robotics-lab/rtt_routing_components
+To https://github.com/tue-robotics-lab/rtt_routing_components.git
+   a202a6b..36aaa67  master -> master
+---------
+./rtt_soem_interfacing
+From https://github.com/tue-robotics-lab/rtt_soem_interfacing
+From https://github.com/tue-robotics-lab/rtt_soem_interfacing
+To https://github.com/tue-robotics-lab/rtt_soem_interfacing.git
+   f839764..db81600  master -> master
+---------
+./rtt_source_components
+From https://github.com/tue-robotics-lab/rtt_source_components
+From https://github.com/tue-robotics-lab/rtt_source_components
+To https://github.com/tue-robotics-lab/rtt_source_components.git
+   566927b..2337f2f  master -> master
+---------
+./rtt_tracing
+From https://github.com/tue-robotics-lab/rtt_tracing
+From https://github.com/tue-robotics-lab/rtt_tracing
+To https://github.com/tue-robotics-lab/rtt_tracing.git
+   b298e14..ce21b1a  master -> master
+---------
+./rtt_visualization
+From https://github.com/tue-robotics-lab/rtt_visualization
+From https://github.com/tue-robotics-lab/rtt_visualization
+To https://github.com/tue-robotics-lab/rtt_visualization.git
+   5cfbcde..4125ee4  master -> master
+---------
+./run_speech_files
+From https://github.com/tue-robotics-lab/run_speech_files
+From https://github.com/tue-robotics-lab/run_speech_files
+To https://github.com/tue-robotics-lab/run_speech_files.git
+   d99846d..de0fe01  master -> master
+---------
+./scl_filters
+From https://github.com/tue-robotics-lab/scl_filters
+From https://github.com/tue-robotics-lab/scl_filters
+To https://github.com/tue-robotics-lab/scl_filters.git
+   b9c8ceb..0574aaf  master -> master
+---------
+./soem_simulator
+From https://github.com/tue-robotics-lab/soem_simulator
+From https://github.com/tue-robotics-lab/soem_simulator
+To https://github.com/tue-robotics-lab/soem_simulator.git
+   5fefff3..9f17675  master -> master
+---------
+./speech_interpreter
+From https://github.com/tue-robotics-lab/speech_interpreter
+From https://github.com/tue-robotics-lab/speech_interpreter
+To https://github.com/tue-robotics-lab/speech_interpreter.git
+   a02b35e..6e4d5c2  master -> master
+---------
+./speech_to_text_google
+From https://github.com/tue-robotics-lab/speech_to_text_google
+From https://github.com/tue-robotics-lab/speech_to_text_google
+To https://github.com/tue-robotics-lab/speech_to_text_google.git
+   2ad9d42..88ba7cf  master -> master
+---------
+./state_viewer
+From https://github.com/tue-robotics-lab/state_viewer
+From https://github.com/tue-robotics-lab/state_viewer
+To https://github.com/tue-robotics-lab/state_viewer.git
+   8be985e..7005da2  master -> master
+---------
+./table_detector_2d
+From https://github.com/tue-robotics-lab/table_detector_2d
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./teamsong_application
+From https://github.com/tue-robotics-lab/teamsong_application
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./teleop
+From https://github.com/tue-robotics-lab/teleop
+From https://github.com/tue-robotics-lab/teleop
+To https://github.com/tue-robotics-lab/teleop.git
+   f30686f..fdc4804  master -> master
+---------
+./TEST_PERA_USB_IO
+From https://github.com/tue-robotics-lab/TEST_PERA_USB_IO
+From https://github.com/tue-robotics-lab/TEST_PERA_USB_IO
+To https://github.com/tue-robotics-lab/TEST_PERA_USB_IO.git
+   810848a..d28846a  master -> master
+---------
+./text_to_speech
+From https://github.com/tue-robotics-lab/text_to_speech
+From https://github.com/tue-robotics-lab/text_to_speech
+To https://github.com/tue-robotics-lab/text_to_speech.git
+   a454bdc..31b72a2  master -> master
+---------
+./text_to_speech_google
+From https://github.com/tue-robotics-lab/text_to_speech_google
+From https://github.com/tue-robotics-lab/text_to_speech_google
+To https://github.com/tue-robotics-lab/text_to_speech_google.git
+   b8b71fa..1cddf0c  master -> master
+---------
+./text_to_speech_philips
+From https://github.com/tue-robotics-lab/text_to_speech_philips
+From https://github.com/tue-robotics-lab/text_to_speech_philips
+To https://github.com/tue-robotics-lab/text_to_speech_philips.git
+   66d69dc..69a0112  master -> master
+---------
+./tf_checker
+From https://github.com/tue-robotics-lab/tf_checker
+From https://github.com/tue-robotics-lab/tf_checker
+To https://github.com/tue-robotics-lab/tf_checker.git
+   0507bc2..a7c890f  master -> master
+---------
+./tue_astar_planner_3d
+From https://github.com/tue-robotics-lab/tue_astar_planner_3d
+From https://github.com/tue-robotics-lab/tue_astar_planner_3d
+To https://github.com/tue-robotics-lab/tue_astar_planner_3d.git
+   02970c0..e1d9ec5  master -> master
+---------
+./tue_astar_planner_old
+From https://github.com/tue-robotics-lab/tue_astar_planner_old
+From https://github.com/tue-robotics-lab/tue_astar_planner_old
+To https://github.com/tue-robotics-lab/tue_astar_planner_old.git
+   f6a14ff..62da299  master -> master
+---------
+./tue_carrot_planner
+From https://github.com/tue-robotics-lab/tue_carrot_planner
+From https://github.com/tue-robotics-lab/tue_carrot_planner
+To https://github.com/tue-robotics-lab/tue_carrot_planner.git
+   33209ca..5f75e4a  master -> master
+---------
+./tue_costmap_2d
+From https://github.com/tue-robotics-lab/tue_costmap_2d
+From https://github.com/tue-robotics-lab/tue_costmap_2d
+To https://github.com/tue-robotics-lab/tue_costmap_2d.git
+   9e639c1..be2e066  master -> master
+---------
+./tue_costmap_msgs
+From https://github.com/tue-robotics-lab/tue_costmap_msgs
+From https://github.com/tue-robotics-lab/tue_costmap_msgs
+To https://github.com/tue-robotics-lab/tue_costmap_msgs.git
+   8d7417d..cc5d9d2  master -> master
+---------
+./tue_executioner_tester
+From https://github.com/tue-robotics-lab/tue_executioner_tester
+From https://github.com/tue-robotics-lab/tue_executioner_tester
+To https://github.com/tue-robotics-lab/tue_executioner_tester.git
+   61c3075..78878bb  master -> master
+---------
+./tue_execution_pack
+From https://github.com/tue-robotics-lab/tue_execution_pack
+From https://github.com/tue-robotics-lab/tue_execution_pack
+To https://github.com/tue-robotics-lab/tue_execution_pack.git
+   5e059eb..8d56383  master -> master
+---------
+./tue_filters
+From https://github.com/tue-robotics-lab/tue_filters
+From https://github.com/tue-robotics-lab/tue_filters
+To https://github.com/tue-robotics-lab/tue_filters.git
+   6101b00..5fff972  master -> master
+---------
+./tue_knowledge
+U	prolog/locations.pl
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./tue_laser_to_pointcloud
+From https://github.com/tue-robotics-lab/tue_laser_to_pointcloud
+From https://github.com/tue-robotics-lab/tue_laser_to_pointcloud
+To https://github.com/tue-robotics-lab/tue_laser_to_pointcloud.git
+   5b0aa90..8cde251  master -> master
+---------
+./tue_map_3d
+From https://github.com/tue-robotics-lab/tue_map_3d
+From https://github.com/tue-robotics-lab/tue_map_3d
+To https://github.com/tue-robotics-lab/tue_map_3d.git
+   7b5050a..32d3b8c  master -> master
+---------
+./tue_move_base
+From https://github.com/tue-robotics-lab/tue_move_base
+From https://github.com/tue-robotics-lab/tue_move_base
+To https://github.com/tue-robotics-lab/tue_move_base.git
+   349c5fb..bcf0c4d  master -> master
+---------
+./tue_move_base_3d
+From https://github.com/tue-robotics-lab/tue_move_base_3d
+From https://github.com/tue-robotics-lab/tue_move_base_3d
+To https://github.com/tue-robotics-lab/tue_move_base_3d.git
+   fb8b190..79e1534  master -> master
+---------
+./tue_move_base_msgs
+From https://github.com/tue-robotics-lab/tue_move_base_msgs
+From https://github.com/tue-robotics-lab/tue_move_base_msgs
+To https://github.com/tue-robotics-lab/tue_move_base_msgs.git
+   912c902..731d7b2  master -> master
+---------
+./tue_nav_core
+From https://github.com/tue-robotics-lab/tue_nav_core
+From https://github.com/tue-robotics-lab/tue_nav_core
+To https://github.com/tue-robotics-lab/tue_nav_core.git
+   7c8f452..371e74b  master -> master
+---------
+./tue_nav_core_3d
+From https://github.com/tue-robotics-lab/tue_nav_core_3d
+From https://github.com/tue-robotics-lab/tue_nav_core_3d
+To https://github.com/tue-robotics-lab/tue_nav_core_3d.git
+   4b3b8d5..2fc1d79  master -> master
+---------
+./tue_pocketsphinx
+From https://github.com/tue-robotics-lab/tue_pocketsphinx
+From https://github.com/tue-robotics-lab/tue_pocketsphinx
+To https://github.com/tue-robotics-lab/tue_pocketsphinx.git
+   05e577a..9aad038  master -> master
+---------
+./tue_reasoner_core
+From https://github.com/tue-robotics-lab/tue_reasoner_core
+From https://github.com/tue-robotics-lab/tue_reasoner_core
+To https://github.com/tue-robotics-lab/tue_reasoner_core.git
+   3ae5ef6..9663bf6  master -> master
+---------
+./tue_rosdep
+From https://github.com/tue-robotics-lab/tue_rosdep
+From https://github.com/tue-robotics-lab/tue_rosdep
+To https://github.com/tue-robotics-lab/tue_rosdep.git
+   ddfc1a9..3a508d5  master -> master
+---------
+./tue_speech_interpreter
+From https://github.com/tue-robotics-lab/tue_speech_interpreter
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Unable to determine upstream SVN information from working tree history
+
+./tue_speech_recognition
+U	follow_me/follow_me.launch
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./tue_wiki_generator
+From https://github.com/tue-robotics-lab/tue_wiki_generator
+From https://github.com/tue-robotics-lab/tue_wiki_generator
+To https://github.com/tue-robotics-lab/tue_wiki_generator.git
+   7d167fe..af5bcb5  master -> master
+---------
+./virtual_cam
+U	src/save.cpp
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./wire_core
+U	include/wire/common.h
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+./wire_gui
+From https://github.com/tue-robotics-lab/wire_gui
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+W: Ignoring error from SVN, path probably does not exist: (160013): Filesystem has no item: '/svn/ros/!svn/bc/18281/code/tue-ros-pkg/trunk/wire/wire_gui' path not found
+W: Do not be alarmed at the above message git-svn is just searching aggressively for old history.
+This may take a while on large repositories
+First, rewinding head to replay your work on top of it...
+Applying: Initial commit
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+Applying: Initial commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+From https://github.com/tue-robotics-lab/wire_gui
+To https://github.com/tue-robotics-lab/wire_gui.git
+   7023d78..856575b  master -> master
+---------
+./wire_interface
+From https://github.com/tue-robotics-lab/wire_interface
+From https://github.com/tue-robotics-lab/wire_interface
+To https://github.com/tue-robotics-lab/wire_interface.git
+   eb5a046..13cd186  master -> master
+---------
+./wire_jpl
+From https://github.com/tue-robotics-lab/wire_jpl
+From https://github.com/tue-robotics-lab/wire_jpl
+To https://github.com/tue-robotics-lab/wire_jpl.git
+   3c44f27..93b9ee9  master -> master
+---------
+./wire_msgs
+From https://github.com/tue-robotics-lab/wire_msgs
+From https://github.com/tue-robotics-lab/wire_msgs
+To https://github.com/tue-robotics-lab/wire_msgs.git
+   497cede..a2a261d  master -> master
+---------
+./wire_simple_interface
+From https://github.com/tue-robotics-lab/wire_simple_interface
+From https://github.com/tue-robotics-lab/wire_simple_interface
+To https://github.com/tue-robotics-lab/wire_simple_interface.git
+   d535e35..d297c07  master -> master
+---------
+./wire_state_estimators
+From https://github.com/tue-robotics-lab/wire_state_estimators
+From https://github.com/tue-robotics-lab/wire_state_estimators
+To https://github.com/tue-robotics-lab/wire_state_estimators.git
+   5901cc0..22b96de  master -> master
+---------
+./wire_tutorials
+From https://github.com/tue-robotics-lab/wire_tutorials
+From https://github.com/tue-robotics-lab/wire_tutorials
+To https://github.com/tue-robotics-lab/wire_tutorials.git
+   1025cba..6a12ab3  master -> master
+---------
+./wire_viz
+From https://github.com/tue-robotics-lab/wire_viz
+From https://github.com/tue-robotics-lab/wire_viz
+To https://github.com/tue-robotics-lab/wire_viz.git
+   3b10e93..bca2b3b  master -> master
+---------
