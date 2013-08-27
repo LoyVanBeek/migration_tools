@@ -2,6 +2,7 @@
 
 import os
 import sys
+import argparse
 
 from github import Github
 
@@ -43,19 +44,17 @@ def clone_all_tue_packages(use_https):
             cd(destinationRoot)
         print " Done"
 
-if __name__ == "__main__":
-    TOKEN = sys.argv[1]
+if __name__ == "__main__":    
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("token", help="A GitHub API application token")
+    parser.add_argument("method", help="Use https or ssh to talk to github. Defaults to https")
+    args = parser.parse_args()
+
+    TOKEN = args.token
     g = Github(login_or_token=TOKEN)
 
-
-    try:
-        method = sys.argv[2]
-        if method == "--ssh":
-            use_https = False
-        elif method == "--https":
-            use_https = True
-    except IndexError:
-        use_https = True
-
+    httpsmap = {"https":True, "ssh":False}
+    use_https = httpsmap[args.method]
 
     clone_all_tue_packages(use_https)

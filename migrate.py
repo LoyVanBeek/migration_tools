@@ -149,9 +149,9 @@ if __name__ == "__main__":
 
     try:
         method = args.method
-        if method == "--ssh":
+        if method == "ssh":
             use_https = False
-        elif method == "--https":
+        elif method == "https":
             use_https = True
     except IndexError:
         use_https = True
