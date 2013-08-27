@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# TODO: Be more verbose, optionally
+
 import os
 import sys
 
@@ -47,6 +49,7 @@ def migrate_repo(packagepath, destination_path, use_https, authors="~/ros/fuerte
                 sys.stderr.write("Could not migrate {0}".format(name))
                 return
 
+    print "git svn clone {0} {1} A={2}".format(svn_url, destination_path, authors)
     git.svn.clone(svn_url, destination_path, A=authors)
 
     cd(destination_path)
@@ -56,9 +59,14 @@ def migrate_repo(packagepath, destination_path, use_https, authors="~/ros/fuerte
     else:
         git_url = repo.ssh_url
 
+    print "git remote add origin {0}".format(git_url)
     git.remote.add("origin", git_url)
-    git.push("origin", "master")
+
+    print "git pull origin master"
     git.pull("origin", "master")
+
+    print "git push origin master"
+    git.push("origin", "master")
 
 
 def scan_for_rospackages(path):
@@ -112,9 +120,15 @@ def migrate_for_path(packagepath, use_https):
     destination = os.path.join(destinationRoot, name)
     if not os.path.exists(destination):  # Only do conversion is path does not yet exist
         print "Migrating {0} to {1} ...".format(packagepath, destination)
-        import ipdb
-        ipdb.set_trace()
+        #import ipdb; ipdb.set_trace()
         migrate_repo(packagepath, destination, use_https)
+        print "-" * 5, name, "done", "-"*5
+    else: 
+        print "{0} already migrated at {1}. git svn rebase-ing instead to bring up to date".format(packagepath, destination)
+        git.pull("origin", "master")
+        git.svn.rebase()
+        git.push("origin", "master")
+
 
 
 if __name__ == "__main__":
