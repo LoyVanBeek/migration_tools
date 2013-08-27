@@ -12,16 +12,23 @@ def get_immediate_subdirectories(dir):
     return (name for name in os.listdir(dir) if os.path.isdir(os.path.join(dir, name)))
 
 def list_branches(package, ignore):
-        for name in get_immediate_subdirectories("."):
-            if name in packages:
-                cd(name)
-                branches = sed(git.branch(), r="s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
-                branches = [str(branch.strip()) for branch in branches]
-                active = [branch for branch in branches if branch[0] == '*'][0]
-                active = active.strip("* ")
-                if not active in ignore:
-                    print "{2}: {0} {1}".format(active, branches, name)
-                cd("..")
+    for name in get_immediate_subdirectories("."):
+        if name in packages:
+            cd(name)
+            branches = sed(git.branch(), r="s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
+            branches = [str(branch.strip()) for branch in branches]
+            active = [branch for branch in branches if branch[0] == '*'][0]
+            active = active.strip("* ")
+            if not active in ignore:
+                print "{2}: {0} {1}".format(active, branches, name)
+            cd("..")
+
+def switch_branches(packages, branch):
+    for name in get_immediate_subdirectories("."):
+        if name in packages:
+            cd(name)
+            git.checkout(branch)
+            cd("..")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
