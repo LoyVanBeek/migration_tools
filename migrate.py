@@ -4,6 +4,7 @@
 
 import os
 import sys
+import argparse
 
 import github
 # github.enable_console_debug_logging()
@@ -132,16 +133,22 @@ def migrate_for_path(packagepath, use_https):
 
 
 if __name__ == "__main__":
-    TOKEN = sys.argv[1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("token", help="A GitHub API application token")
+    parser.add_argument("package", help="Which package to migrate. Or pass --all instead")
+    parser.add_argument("method", help="Use https or ssh to talk to github. Defaults to https")
+    args = parser.parse_args()
+
+    TOKEN = args.token
 
     specific_package = None
     try:
-        specific_package = sys.argv[2]
+        specific_package = args.package
     except IndexError:
         print "Specify a ROS package name, or --all"
 
     try:
-        method = sys.argv[3]
+        method = args.method
         if method == "--ssh":
             use_https = False
         elif method == "--https":
