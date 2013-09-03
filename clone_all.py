@@ -11,8 +11,8 @@ from sh import git, cd, svn, grep
 
 import xml.etree.ElementTree as ET
 
-sourceRoot = "~/ros/fuerte/tue/trunk"
-destinationRoot = "~/ros/fuerte/tue/git"
+sourceRoot = "~/ros/groovy/tue/trunk"
+destinationRoot = "~/ros/groovy/tue/git"
 
 sourceRoot = os.path.expanduser(sourceRoot)
 destinationRoot = os.path.expanduser(destinationRoot)
